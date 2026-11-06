@@ -1,5 +1,5 @@
 <script setup>
-import { createProduct, getProducts } from '../api/Products';
+import { createProduct, getProducts,deleteprod } from '../api/Products';
 
 </script>
 
@@ -11,7 +11,7 @@ import { createProduct, getProducts } from '../api/Products';
                 products:[],
                 newProduct:{
                     name:"",
-                    
+
                 }
             }
         },
@@ -22,6 +22,9 @@ import { createProduct, getProducts } from '../api/Products';
             async addProduct(product){
                 await createProduct(product);
                 await this.loadProducts();
+            },
+            async removeProduct(id){
+                await deleteprod()
             }
         },
         mounted(){

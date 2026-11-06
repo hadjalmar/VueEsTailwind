@@ -12,4 +12,9 @@ const createProduct = async(product)=>{
     })
     return resp.json();
 }
-export {getProducts, createProduct};
+const deleteprod = async(id)=>{
+    const resp = await fetch(`${API_URL}/${id}`,{
+        method:"DELETE",
+    })
+}
+export {getProducts, createProduct,deleteprod};
