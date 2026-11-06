@@ -17,4 +17,7 @@ const deleteprod = async(id)=>{
         method:"DELETE",
     })
 }
-export {getProducts, createProduct,deleteprod};
+const update = async (id,product)=>{
+
+}
+export {getProducts, createProduct,deleteprod,update};

@@ -63,5 +63,14 @@ import { createProduct, getProducts,deleteprod } from '../api/Products';
             <input type="checkbox" name="instock"><br>
             <button type="submit"></button>
         </form>
+        <form class="">
+            <label for="name">Név:</label>
+            <input type="text" name="name"><br>
+            <label for="price">Ár:</label>
+            <input type="number" name="price"><br>
+            <label for="instock">van-e:</label>
+            <input type="checkbox" name="instock"><br>
+            <button type="submit"></button>
+        </form>
     </main>
 </template>
